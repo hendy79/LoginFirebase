@@ -53,9 +53,12 @@ public class Register extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(!task.isSuccessful()){
-                                Toast.makeText(Register.this,"Gagal Register!",Toast.LENGTH_SHORT);
+                                email.setText("");
+                                pass.setText("");
+                                Cpass.setText("");
+                                Toast.makeText(Register.this,"Gagal Register!",Toast.LENGTH_SHORT).show();
                             }else{
-                                Toast.makeText(Register.this,"Selamat, anda Berhasil Register!",Toast.LENGTH_SHORT);
+                                Toast.makeText(Register.this,"Selamat, anda Berhasil Register!",Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(Register.this,MainActivity.class));
                             }
                         }
