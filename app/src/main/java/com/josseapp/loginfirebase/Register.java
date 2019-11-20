@@ -56,9 +56,9 @@ public class Register extends AppCompatActivity {
                                 email.setText("");
                                 pass.setText("");
                                 Cpass.setText("");
-                                Toast.makeText(Register.this,"Gagal Register!",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Register.this,"Gagal Register!",Toast.LENGTH_SHORT);
                             }else{
-                                Toast.makeText(Register.this,"Selamat, anda Berhasil Register!",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Register.this,"Selamat, anda Berhasil Register!",Toast.LENGTH_SHORT);
                                 startActivity(new Intent(Register.this,MainActivity.class));
                             }
                         }
