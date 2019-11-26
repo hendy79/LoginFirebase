@@ -481,7 +481,7 @@ by this License, of making, using, or selling its contributor version,
 but do not include claims that would be infringed only as a
 consequence of further modification of the contributor version.  For
 purposes of this definition, "control" includes the right to grant
-patent sublicenses in a manner consistent with the requirements of
+patent sublicenses by a manner consistent with the requirements of
 this License.
 
   Each contributor grants you a non-exclusive, worldwide, royalty-free
@@ -652,7 +652,7 @@ Also add information on how to contact you by electronic and paper mail.
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    <program>  Copyright (C) <year>  <name of author>
+    LoginFirebase Copyright (C) 2019 HENDY
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `show c' for details.
