@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if(user!=null){
-                    Toast.makeText(MainActivity.this,"Kamu berhasil login!",Toast.LENGTH_SHORT);
+                    Toast.makeText(MainActivity.this,"Kamu berhasil login!",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(MainActivity.this,"Harap Login terlebih dahulu!",Toast.LENGTH_SHORT);
+                    Toast.makeText(MainActivity.this,"Harap Login terlebih dahulu!",Toast.LENGTH_SHORT).show();
                 }
             }
         };
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                             if(!task.isSuccessful()){
                                 email.setText("");
                                 pass.setText("");
-                                Toast.makeText(MainActivity.this,"Login error, coba lagi!",Toast.LENGTH_SHORT);
+                                Toast.makeText(MainActivity.this,"Login error, coba lagi!",Toast.LENGTH_SHORT).show();
                             }else{
                                 Intent i = new Intent(MainActivity.this,HomeActivity.class);
                                 startActivity(i);
