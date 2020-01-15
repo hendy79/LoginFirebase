@@ -100,8 +100,4 @@ public class Register extends AppCompatActivity {
             }
         });
     }
-    public static void writeNewUser(DatabaseReference databaseReference, String userId, String name, String email, String phoneNum, String password){
-        User user = new User(name, email, phoneNum, password);
-        databaseReference.child("users").child(userId).setValue(user);
-    }
 }

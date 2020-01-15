@@ -16,6 +16,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 public class MainActivity extends AppCompatActivity {
     EditText email,pass;
@@ -58,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
                     pass.setError("Password kosong!");
                     pass.requestFocus();
                 }else if(!(em.isEmpty() && pw.isEmpty())){
+                    /*DatabaseReference dbref = FirebaseDatabase.getInstance().getReference("users_login_firebase");
+                    Query query = dbref.equalTo(em);*/
                     firebaseAuth.signInWithEmailAndPassword(em,pw)
                             .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
